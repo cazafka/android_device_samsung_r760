@@ -34,14 +34,14 @@
          <EriInfo RoamingIndicator="0"
                   IconIndex="1"
                   IconMode="0"
-                  EriText="Sprint"
+                  EriText="US Cellular"
                   CallPromptId="0"
                   AlertId="0"/>
 
          <EriInfo RoamingIndicator="1"
                   IconIndex="1"
                   IconMode="0"
-                  EriText="Sprint"
+                  EriText="US Cellular"
                   CallPromptId="0"
                   AlertId="0"/>
 
@@ -132,14 +132,14 @@
          <EriInfo RoamingIndicator="128"
                   IconIndex="1"
                   IconMode="0"
-                  EriText="Sprint"
+                  EriText="US Cellular"
                   CallPromptId="0"
                   AlertId="0"/>
 
          <EriInfo RoamingIndicator="352"
                   IconIndex="1"
                   IconMode="0"
-                  EriText="Sprint - Roaming"
+                  EriText="US Cellular - Roaming"
                   CallPromptId="0"
                   AlertId="0"/>
 </EriFile>
