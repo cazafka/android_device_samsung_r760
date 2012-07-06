@@ -5,8 +5,8 @@ _______________________________
 - make a directory for your build source, then sync CyanogenMod: repo init -u git://github.com/CyanogenMod/android.git -b ics
 - plug in your phone, and run the extract files script against a working cyanogenmod build
 - change directory to the top, and source the build environment setup: . build/envsetup.sh
-- brunch cm_epic4gtouch-userdebug, and wait as your meal cooks. 
-- it should output an update.zip in out/target/product/epic4gtouch... you've made CyanogenMod. congratulations. 
+- brunch cm_r760-userdebug, and wait as your meal cooks. 
+- it should output an update.zip in out/target/product/r760... you've made CyanogenMod. congratulations. 
   Now you can brag to your friends about how 1337 you are that you can build a ROM from source. :)
 
 

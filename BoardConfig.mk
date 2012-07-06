@@ -36,22 +36,22 @@ endif
 
 TARGET_BOARD_PLATFORM := exynos4
 TARGET_SOC := exynos4210
-TARGET_BOOTLOADER_BOARD_NAME := SPH-D710 
-TARGET_BOARD_INFO_FILE := device/samsung/epic4gtouch/board-info.txt
+TARGET_BOOTLOADER_BOARD_NAME := SCH-R760 
+TARGET_BOARD_INFO_FILE := device/samsung/r760/board-info.txt
 
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
 TARGET_PROVIDES_INIT := true
 TARGET_PROVIDES_INIT_TARGET_RC := true
-TARGET_RECOVERY_INITRC := device/samsung/epic4gtouch/recovery.rc
+TARGET_RECOVERY_INITRC := device/samsung/r760/recovery.rc
 
 BOARD_NAND_PAGE_SIZE := 4096
 BOARD_NAND_SPARE_SIZE := 128
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_CMDLINE := console=ttySAC2,115200 consoleblank=0
-TARGET_PREBUILT_KERNEL := device/samsung/epic4gtouch/kernel
+TARGET_PREBUILT_KERNEL := device/samsung/r760/kernel
 
 # Filesystem
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -61,11 +61,11 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 # Releasetools
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/samsung/epic4gtouch/releasetools/epic4gtouch_ota_from_target_files
-TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/samsung/epic4gtouch/releasetools/epic4gtouch_img_from_target_files
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/samsung/r760/releasetools/r760_ota_from_target_files
+TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/samsung/r760/releasetools/r760_img_from_target_files
 
 # Graphics
-BOARD_EGL_CFG := device/samsung/epic4gtouch/configs/egl.cfg
+BOARD_EGL_CFG := device/samsung/r760/configs/egl.cfg
 USE_OPENGL_RENDERER := true
 
 # Enable WEBGL in WebKit
@@ -121,8 +121,8 @@ BOARD_VOLD_DISC_HAS_MULTIPLE_MAJORS := true
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/class/android_usb/f_mass_storage/lun%d/file"
 
 # Recovery
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/epic4gtouch/recovery/recovery_keys.c
-BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/epic4gtouch/recovery/graphics.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/r760/recovery/recovery_keys.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/r760/recovery/graphics.c
 BOARD_UMS_LUNFILE := "/sys/class/android_usb/f_mass_storage/lun0/file"
 BOARD_USES_MMCUTILS := true
 BOARD_HAS_NO_MISC_PARTITION := true
@@ -130,17 +130,17 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 
 # Device specific headers
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/epic4gtouch/overlay/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/r760/overlay/include
 
 # Charging mode
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 BOARD_BATTERY_DEVICE_NAME := "battery"
-BOARD_CHARGER_RES := device/samsung/epic4gtouch/res/charger
+BOARD_CHARGER_RES := device/samsung/r760/res/charger
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := epic4gtouch,SPH-D710
+TARGET_OTA_ASSERT_DEVICE := r760,SCH-R760
 
 # Use the non-open-source parts, if they're present
--include vendor/samsung/epic4gtouch/BoardConfigVendor.mk
+-include vendor/samsung/r760/BoardConfigVendor.mk
 
-BOARD_CUSTOM_BOOTIMG_MK := device/samsung/epic4gtouch/shbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/r760/shbootimg.mk

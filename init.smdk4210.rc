@@ -303,8 +303,8 @@ on boot
 
     mount debugfs /sys/kernel/debug /sys/kernel/debug
 
-    setprop ro.build.product SPH-D710
-    setprop ro.product.device SPH-D710
+    setprop ro.build.product SCH-R760
+    setprop ro.product.device SCH-R760
     setprop ro.radio.noril yes
 
 # Permisions for sensors

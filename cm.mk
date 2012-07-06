@@ -18,19 +18,19 @@
 $(call inherit-product, vendor/cm/config/cdma.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := epic4gtouch
+PRODUCT_RELEASE_NAME := r760
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/epic4gtouch/full_epic4gtouch.mk)
+$(call inherit-product, device/samsung/r760/full_r760.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := epic4gtouch
-PRODUCT_NAME := cm_epic4gtouch
+PRODUCT_DEVICE := r760
+PRODUCT_NAME := cm_r760
 PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := SPH-D710 
+PRODUCT_MODEL := SCH-R760 
 
 #Set build fingerprint
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SPH-D710 BUILD_FINGERPRINT=samsung/SPH-D710/SPH-D710:4.0.3/IML74K/FC24:user/release-keys PRIVATE_BUILD_DESC="SPH-D710-user 4.0.3 IMM76D FC24 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SCH-R760 BUILD_FINGERPRINT=samsung/SCH-R760/SCH-R760:4.0.3/IML74K/FC24:user/release-keys PRIVATE_BUILD_DESC="SCH-R760-user 4.0.3 IMM76D FC24 release-keys"
